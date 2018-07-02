@@ -65,13 +65,18 @@ When('envio los datos con POST al servicio para Registar', async function () {
         });
   });
 
-  Then('el servidor responde con el estado {int} ok', function (code) {
+  Then('el servidor responder con el estado {int} ok', function (code) {
     expect(authResponse.statusCode).to.eql(code);
     statusCode = code;  
   });
 
   Then('se deberia mostar un mensaje que diga {string}', function (mensaje) {
     console.log(mensaje);
+  });
+
+  Then('el servidor responder con el estado {int} Not Acceptable', function (code) {
+    expect(authResponse.statusCode).to.eql(code);
+    statusCode = code;
   });
 
   
