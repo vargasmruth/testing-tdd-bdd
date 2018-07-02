@@ -14,5 +14,4 @@ El repositorio contiene 2 carpetas:
 
 
 ## Author
-* **María **
 * [Ruth Vargas](https://www.linkedin.com/in/vargasmruth/) 
